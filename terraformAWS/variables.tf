@@ -1,8 +1,3 @@
-# variable "gcp_project_id" {
-#   type        = string
-#   description = "The GCP project ID to apply this config to"
-# }
-
 variable "name" {
   type        = string
   description = "Name given to the new EKS cluster"
@@ -29,5 +24,5 @@ variable "filepath_manifest" {
 
 variable "memorystore" {
   type        = bool
-  description = "If true, Online Boutique's in-cluster Redis cache will be replaced with a Google Cloud Memorystore Redis cache"
+  description = "If true, Online Boutique's in-cluster Redis cache will be replaced with an AWS Memorystore Redis cache"
 }
